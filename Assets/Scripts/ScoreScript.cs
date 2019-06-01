@@ -5,23 +5,35 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    private Text Score;
+    public GameObject Score;
+    private Text ScoreText;
     private int ScoreInt;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        Score = this.GetComponent<Text>();
-        ScoreInt = 0;
-        Score.text = ScoreInt.ToString();
+        ScoreText = Score.GetComponent<Text>();
+        //ScoreInt = 0;
+        ScoreInt = PlayerPrefs.GetInt("Score", 0);
+        ScoreText.text = ScoreInt.ToString();
     }
-
+    public void addscore(int ammount)
+    {
+        ScoreInt=ScoreInt+ammount;
+        ScoreText.text = ScoreInt.ToString();
+        PlayerPrefs.SetInt("Score", ScoreInt);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            addscore(1);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space))
-        {
-            ScoreInt++;
-            Score.text = ScoreInt.ToString();
-        }
+       
     }
 }
