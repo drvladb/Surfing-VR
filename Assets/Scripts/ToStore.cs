@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ToLevels : MonoBehaviour
+public class ToStore : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class ToLevels : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
     // Update is called once per frame
