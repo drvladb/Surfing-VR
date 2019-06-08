@@ -17,7 +17,7 @@ public class ReturnToPlaygroundButton : MonoBehaviour
     }
     public void myFunctionForOnClickEvent()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
     // Update is called once per frame
     void Update()

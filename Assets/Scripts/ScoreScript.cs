@@ -28,7 +28,6 @@ public class ScoreScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //addscore(1);
             addscore(1);
         }
     }
