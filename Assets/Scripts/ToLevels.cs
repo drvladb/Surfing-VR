@@ -14,7 +14,7 @@ public class ToLevels : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
     // Update is called once per frame

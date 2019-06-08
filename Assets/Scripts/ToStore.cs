@@ -14,7 +14,7 @@ public class ToStore : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
     // Update is called once per frame
