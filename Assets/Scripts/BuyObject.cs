@@ -26,12 +26,19 @@ public class BuyObject : MonoBehaviour
     // Update is called once per frame
     public void myFunctionForOnClickEvent()
     {
-        this.gameObject.SetActive(false);
-        sold.SetActive(true);
-        PlayerPrefs.SetInt("GotBall1", 1);
-        PlayerPrefs.SetInt("Score", score - 25);
-        score = score - 25;
-        scoreobject.GetComponent<Text>().text = score.ToString();
+        if (score >= 25)
+        {
+            this.gameObject.SetActive(false);
+            sold.SetActive(true);
+            PlayerPrefs.SetInt("GotBall1", 1);
+            PlayerPrefs.SetInt("Score", score - 25);
+            score = score - 25;
+            scoreobject.GetComponent<Text>().text = score.ToString();
+        }
+        else
+        {
+            print("thicccccc");
+        }
     }
     void Update()
     {
