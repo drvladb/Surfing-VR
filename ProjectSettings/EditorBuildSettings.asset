@@ -5,12 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/PlayGround.unity
-    guid: 4f7494a7bf0954a0ca4462861ce8c00b
-  - enabled: 0
-    path: Assets/Scenes/Die.unity
-    guid: bf1dfe2e860ff4e29b578989e6a25b4a
   - enabled: 1
     path: Assets/Scenes/Levels/0Vlad.unity
     guid: 581b324b7bcd146d384c4915f6cccd20
@@ -20,19 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/2Vlad.unity
     guid: 632c9c58160e740e087448e66b692791
-  - enabled: 0
-    path: Assets/Scenes/Score.unity
-    guid: cf00ec985af19114697500e2e59f5d4c
-  - enabled: 0
-    path: Assets/Scenes/Store.unity
-    guid: e96ceee216eb94fcdb3b768f3354a4ea
-  - enabled: 1
-    path: Assets/Scenes/Levels/5Abhinav.unity
-    guid: 24543bcd9db3fbe44b31ed42cd186ca9
   - enabled: 1
     path: Assets/Scenes/Levels/3Noah.unity
     guid: 35b98a5e72e6a5246b616a05f625c912
   - enabled: 1
     path: Assets/Scenes/Levels/4Noah.unity
     guid: b8110cb0fc7592e47a3c5e8cc7d79ab3
+  - enabled: 1
+    path: Assets/Scenes/Levels/5Abhinav.unity
+    guid: 24543bcd9db3fbe44b31ed42cd186ca9
   m_configObjects: {}
