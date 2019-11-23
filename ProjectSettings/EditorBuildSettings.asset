@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/5Abhinav.unity
     guid: 24543bcd9db3fbe44b31ed42cd186ca9
+  - enabled: 1
+    path: Assets/Scenes/Levels/6Ardit.unity
+    guid: ca7feceaf77d0dc469a28164243c684f
   m_configObjects: {}
